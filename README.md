@@ -70,5 +70,5 @@ Buka file `ShutdownTimer.sln` dengan Visual Studio, lalu tekan **F5** untuk menj
 Proyek ini bebas digunakan untuk keperluan pribadi maupun pembelajaran.
 
 ---
-
+⚠️ Windows mungkin menampilkan peringatan SmartScreen karena aplikasi belum bersertifikat digital. Klik "More info" → "Run anyway" untuk menjalankan aplikasi.
 Dibuat oleh **[rangga123vibe-max](https://github.com/rangga123vibe-max)** — by RanZx
