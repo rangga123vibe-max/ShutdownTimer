@@ -6,10 +6,20 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <!-- Dibutuhkan untuk NotifyIcon (ikon system tray + notifikasi Toast/Balloon).
+         WPF sendiri tidak punya NotifyIcon, jadi kita pinjam dari WinForms. -->
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <!-- Icon untuk file .exe (muncul di File Explorer, shortcut, taskbar) -->
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Assets\" />
+    <!-- Daftarkan icon.ico sebagai Resource WPF, supaya bisa dipakai
+         lewat Icon="Assets/icon.ico" di MainWindow.xaml (bukan cuma
+         jadi icon .exe lewat ApplicationIcon di atas). -->
+    <Resource Include="Assets\icon.ico" />
   </ItemGroup>
 
 </Project>

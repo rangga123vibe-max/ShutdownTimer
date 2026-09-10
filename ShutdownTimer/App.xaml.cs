@@ -1,6 +1,9 @@
 ﻿using System.Configuration;
 using System.Data;
-using System.Windows;
+// Alias eksplisit karena UseWindowsForms=true membuat "Application" menjadi
+// ambigu (ada di System.Windows dan System.Windows.Forms). App WPF kita
+// harus mewarisi dari System.Windows.Application.
+using Application = System.Windows.Application;
 
 namespace ShutdownTimer
 {
